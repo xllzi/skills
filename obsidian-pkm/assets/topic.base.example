@@ -1,0 +1,33 @@
+# Obsidian Base template — topic MOC for the SquareLab vault.
+# Usage: copy into the vault root as <Topic>.base, then replace <topic-tag>
+# with the topic's kebab-case tag. Notes are collected automatically.
+# In table views, `order` doubles as the visible column list.
+# Docs: https://help.obsidian.md/bases
+filters:
+  and:
+    - file.hasTag("<topic-tag>")
+    - type != "moc"
+views:
+  - type: table
+    name: All
+    order:
+      - file.name
+      - type
+      - status
+      - file.mtime
+  - type: table
+    name: Evergreen
+    filters:
+      and:
+        - status == "evergreen"
+    order:
+      - file.name
+      - file.mtime
+  - type: table
+    name: Seeds
+    filters:
+      and:
+        - status == "seed"
+    order:
+      - file.name
+      - file.ctime
