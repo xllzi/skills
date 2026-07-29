@@ -57,3 +57,5 @@ Rule ids: P01 em dash; W01 banned word (list above); W02 contraction; W03 market
 
 D01-D03 come from the full STE100 dictionary (scripts/ste_dictionary.json, 875 approved and 1274 not-approved words, extracted from Issue 9 with scripts/extract_dictionary.py). A D01-D03 finding can still be correct when the word is a technical noun or technical verb approved by your project (STE100 rules 1.5 and 1.12). Keep it then, and do not "fix" it.
 
+Read references/linter.md for the full rule reference, the pipeline, and the customization points. Read references/dictionary.md for the dictionary format, regeneration, and project customization. The full specification is at references/ASD-STE100_ISSUE9.pdf.
+
