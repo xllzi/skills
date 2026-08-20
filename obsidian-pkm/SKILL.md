@@ -40,7 +40,7 @@ Within that cycle, **you propose knowledge-base management; the user decides.**
 - **Naming**: descriptive **English** title = filename (e.g. `Spaced Repetition.md`). No
   timestamp IDs — wikilinks + backlinks do the connecting.
 - **Language**: bilingual — **English** titles and `tags` (for linkability);
-  **Chinese** body content. Do not make titles(including small titles) `Chinese / English translation` or `Chinese (English translation)`
+  Chinese or English body content. Do not make titles(including small titles) `Chinese / English translation` or `Chinese (English translation)`
 - **Folders**:
   - `Inbox/`: substantial unprocessed captures (clippings, links), one note each.
   - Vault root: permanent atomic notes (flat).
@@ -184,7 +184,10 @@ A project Base filtered by the project tag (e.g. `cairn`) auto-collects the whol
 project cluster — living documents and atomic notes alike.
 
 ### §7 写作沉淀
-Synthesize linked permanent notes into a draft
+There is two type of writting:
+1. writting the things we learned into a new note or already existed one
+2. Synthesize linked permanent notes into a new one on a very specific main topic
+Decided on what user specified.
 
 ## Notes
 - Prefer `format=json` when you need to parse output programmatically.

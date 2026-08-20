@@ -1,6 +1,6 @@
 ---
 name: ste-writing
-description: skill of writing technical documents (docs, manuals, README, PR descriptions, error messages, release notes, comments of code) in ASD-STE100 Simplified Technical English to remove "AI slop". Use whenever you write technical documents or be asked to make writing not sound like AI, make docs clear, concise, or plain, enforce a controlled writing style. Two modes: strict and STE-flavored.
+description: skill of writing technical documents (docs, manuals, README, PR descriptions, error messages, release notes, comments of code) in ASD-STE100 Simplified Technical English to remove "AI slop". Use whenever you write technical documents or be asked to make writing not sound like AI, make docs clear, concise, or plain, enforce a controlled writing style. Two modes, strict and STE-flavored.
 ---
 
 ## Overview
@@ -56,6 +56,3 @@ python scripts/ste_lint.py --strict <file>   # strict
 Rule ids: P01 em dash; W01 banned word (list above); W02 contraction; W03 marketing adjective; W04 AI-slop phrase; V01 passive voice; V02 nominalization; V03 stacked auxiliaries; V04 -ing step; S01 length cap; S02 paragraph over six sentences; S03 several actions per item; S04 condition after command. Strict mode adds: D01 word not approved in the STE100 dictionary; D02 word not in the approved dictionary; D03 word approved only as a different part of speech or with restricted meanings.
 
 D01-D03 come from the full STE100 dictionary (scripts/ste_dictionary.json, 875 approved and 1274 not-approved words, extracted from Issue 9 with scripts/extract_dictionary.py). A D01-D03 finding can still be correct when the word is a technical noun or technical verb approved by your project (STE100 rules 1.5 and 1.12). Keep it then, and do not "fix" it.
-
-Read references/linter.md for the full rule reference, the pipeline, and the customization points. Read references/dictionary.md for the dictionary format, regeneration, and project customization. The full specification is at references/ASD-STE100_ISSUE9.pdf.
-
