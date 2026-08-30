@@ -14,6 +14,8 @@ Most commands default to the active file if omitted. Quote values with spaces
 
 IMPORTANT: The target vault you are managing is always "SquareLab". So, you should always add parameter `vault=SquareLab` to obsidian command.
 
+When Agent in sandbox runs this skill from the `/home/Qtmd/SquareLab` project, the sandbox configuration must have access to this path in the host so the CLI can reach the running host Obsidian instance. 
+
 ## Role & collaboration
 
 This vault is the user's thinking workspace, and the workflow below is **the user's
