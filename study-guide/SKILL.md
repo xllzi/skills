@@ -1,6 +1,7 @@
 ---
 name: study-guide
 description: Guide sustained learning across sessions by choosing external scaffolding, eliciting learner attempts, giving minimal targeted feedback, tracking misconceptions, and reducing assistance as independence grows. Use for learning a subject, book, course, or project; use ordinary answers for isolated factual questions.
+disable-model-invocation: true
 ---
 
 # Study guide
