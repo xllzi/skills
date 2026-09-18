@@ -1,0 +1,103 @@
+{
+  "strict": false,
+  "files": {
+    "pr_description.md": {
+      "findings": [
+        {
+          "file": "/home/Qtmd/skills/ste-writing-workspace/iteration-1/eval-write-pr-description/without_skill/outputs/pr_description.md",
+          "line": 10,
+          "col": 1,
+          "rule": "S01",
+          "severity": "error",
+          "message": "descriptive sentence has 26 words (max 25, SENTENCES rule)"
+        },
+        {
+          "file": "/home/Qtmd/skills/ste-writing-workspace/iteration-1/eval-write-pr-description/without_skill/outputs/pr_description.md",
+          "line": 16,
+          "col": 1,
+          "rule": "S01",
+          "severity": "error",
+          "message": "descriptive sentence has 32 words (max 25, SENTENCES rule)"
+        },
+        {
+          "file": "/home/Qtmd/skills/ste-writing-workspace/iteration-1/eval-write-pr-description/without_skill/outputs/pr_description.md",
+          "line": 17,
+          "col": 28,
+          "rule": "P01",
+          "severity": "error",
+          "message": "em/en dash: write two sentences (PUNCTUATION rule)"
+        },
+        {
+          "file": "/home/Qtmd/skills/ste-writing-workspace/iteration-1/eval-write-pr-description/without_skill/outputs/pr_description.md",
+          "line": 33,
+          "col": 13,
+          "rule": "P01",
+          "severity": "error",
+          "message": "em/en dash: write two sentences (PUNCTUATION rule)"
+        },
+        {
+          "file": "/home/Qtmd/skills/ste-writing-workspace/iteration-1/eval-write-pr-description/without_skill/outputs/pr_description.md",
+          "line": 38,
+          "col": 21,
+          "rule": "V01",
+          "severity": "warning",
+          "message": "possible passive voice 'is explicitly set': use active voice (VERBS rule) (confirm: no 'by' agent found)"
+        },
+        {
+          "file": "/home/Qtmd/skills/ste-writing-workspace/iteration-1/eval-write-pr-description/without_skill/outputs/pr_description.md",
+          "line": 64,
+          "col": 1,
+          "rule": "S01",
+          "severity": "error",
+          "message": "descriptive sentence has 26 words (max 25, SENTENCES rule)"
+        },
+        {
+          "file": "/home/Qtmd/skills/ste-writing-workspace/iteration-1/eval-write-pr-description/without_skill/outputs/pr_description.md",
+          "line": 65,
+          "col": 51,
+          "rule": "P01",
+          "severity": "error",
+          "message": "em/en dash: write two sentences (PUNCTUATION rule)"
+        },
+        {
+          "file": "/home/Qtmd/skills/ste-writing-workspace/iteration-1/eval-write-pr-description/without_skill/outputs/pr_description.md",
+          "line": 102,
+          "col": 1,
+          "rule": "S01",
+          "severity": "error",
+          "message": "descriptive sentence has 28 words (max 25, SENTENCES rule)"
+        },
+        {
+          "file": "/home/Qtmd/skills/ste-writing-workspace/iteration-1/eval-write-pr-description/without_skill/outputs/pr_description.md",
+          "line": 103,
+          "col": 72,
+          "rule": "P01",
+          "severity": "error",
+          "message": "em/en dash: write two sentences (PUNCTUATION rule)"
+        },
+        {
+          "file": "/home/Qtmd/skills/ste-writing-workspace/iteration-1/eval-write-pr-description/without_skill/outputs/pr_description.md",
+          "line": 114,
+          "col": 20,
+          "rule": "P01",
+          "severity": "error",
+          "message": "em/en dash: write two sentences (PUNCTUATION rule)"
+        }
+      ],
+      "by_rule": {
+        "S01": 4,
+        "P01": 5,
+        "V01": 1
+      },
+      "by_severity": {
+        "error": 9,
+        "warning": 1
+      }
+    }
+  },
+  "totals": {
+    "S01": 4,
+    "P01": 5,
+    "V01": 1
+  }
+}

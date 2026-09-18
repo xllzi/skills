@@ -1,0 +1,11 @@
+{
+  "strict": false,
+  "files": {
+    "pr_description.md": {
+      "findings": [],
+      "by_rule": {},
+      "by_severity": {}
+    }
+  },
+  "totals": {}
+}

@@ -1,0 +1,11 @@
+{
+  "strict": false,
+  "files": {
+    "readme.md": {
+      "findings": [],
+      "by_rule": {},
+      "by_severity": {}
+    }
+  },
+  "totals": {}
+}

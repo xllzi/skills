@@ -1,0 +1,22 @@
+{
+  "blind_scores": {
+    "a": {
+      "clarity": 5,
+      "concision": 5,
+      "coverage": 4,
+      "plain_style": 5
+    },
+    "b": {
+      "clarity": 4,
+      "concision": 2,
+      "coverage": 3,
+      "plain_style": 3
+    },
+    "winner": "A",
+    "reason": "Output A covers what/why/testing in plain, active, short sentences with nothing extra, matching the task's stated style constraints. Output B is clear but far too long, padding the PR with unrequested risk/rollout tables and a checklist plus many invented specifics (exact request counts, failure percentages, latency percentiles) that the task never supplied. A's only weakness is slightly thinner detail on the idempotency rule, which is a minor coverage cost against B's fabrication and bloat."
+  },
+  "mapping": {
+    "A": "with_skill",
+    "B": "without_skill"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "assertion_results": [
+    {"text": "outputs/pr_description.md exists and covers what/why/testing", "passed": true, "evidence": "Sections 'What changed', 'Why', 'How tested'; unit tests per error type plus soak test through a fault-injecting proxy."},
+    {"text": "No em/en dashes (linter P01 clean)", "passed": true, "evidence": "lint.json: zero findings."},
+    {"text": "No sentence over 25 words (linter S01 clean)", "passed": true, "evidence": "lint.json: zero findings."},
+    {"text": "No marketing adjectives or AI-slop phrases (linter W03/W04 clean)", "passed": true, "evidence": "lint.json: zero findings."},
+    {"text": "Concise: body is 500 words or fewer", "passed": true, "evidence": "wc -w: 274 words."},
+    {"text": "No unjustified passive voice in the text", "passed": true, "evidence": "Zero V01 findings; active voice throughout."},
+    {"text": "No invented specifics: every number, name, or path comes from the prompt; unknown values use placeholders", "passed": true, "evidence": "All unknowns are placeholders: '<max attempts>', '<base delay>', '<test file>', '<soak duration>', '<failure count>', '<artifact link>'. Minor flaw: '<failure count>' is reused for both before and after runs. Borderline: 'fake clock' is an invented test-implementation detail, judged a design description rather than a number/name/path."}
+  ],
+  "summary": {"passed": 7, "failed": 0, "total": 7, "pass_rate": 1.0}
+}

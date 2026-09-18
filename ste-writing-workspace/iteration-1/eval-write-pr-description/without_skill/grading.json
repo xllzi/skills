@@ -1,0 +1,45 @@
+{
+  "assertion_results": [
+    {
+      "text": "outputs/pr_description.md exists and covers what/why/testing",
+      "passed": true,
+      "evidence": "Covers what/why/testing in depth \u2014 Summary, What changed, Why, How it was tested, plus risk/rollout and checklist sections."
+    },
+    {
+      "text": "No em/en dashes (linter P01 clean)",
+      "passed": false,
+      "evidence": "5 P01 findings, e.g. 'behind lossy network paths \u2014 roughly 0.4% of requests', 'full jitter applied \u2014 the sleep is a uniform random value'."
+    },
+    {
+      "text": "No sentence over 25 words (linter S01 clean)",
+      "passed": false,
+      "evidence": "4 S01 findings: sentences of 26, 32, 26, and 28 words."
+    },
+    {
+      "text": "No marketing adjectives or AI-slop phrases (linter W03/W04 clean)",
+      "passed": true,
+      "evidence": "lint.json: zero W03/W04 findings."
+    },
+    {
+      "text": "Concise: body is 500 words or fewer",
+      "passed": false,
+      "evidence": "wc -w: 1088 words, 145 lines \u2014 3.6x the with-skill length; adds unrequested tables, rollout plan, and checklist."
+    },
+    {
+      "text": "No unjustified passive voice in the text",
+      "passed": false,
+      "evidence": "Passives: 'is explicitly set', 'are rewound automatically', 'is not retried', 'are retried by default' (V01 flagged one; human review confirms the rest)."
+    },
+    {
+      "text": "No invented specifics (added in iteration-2 review of the assertion set)",
+      "passed": false,
+      "evidence": "Fabricates measurements: '361,204 requests', '1,447 (0.40%)', 'p99 1.9s', '12 of 20 requests', RetryBudget/MaxDelay values \u2014 none in the prompt."
+    }
+  ],
+  "summary": {
+    "passed": 2,
+    "failed": 5,
+    "total": 7,
+    "pass_rate": 0.286
+  }
+}

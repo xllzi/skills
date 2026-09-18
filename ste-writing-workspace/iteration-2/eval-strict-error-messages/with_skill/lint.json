@@ -1,0 +1,125 @@
+{
+  "strict": true,
+  "files": {
+    "errors.md": {
+      "findings": [
+        {
+          "file": "/home/Qtmd/skills/ste-writing-workspace/iteration-2/eval-strict-error-messages/with_skill/outputs/errors.md",
+          "line": 1,
+          "col": 7,
+          "rule": "D02",
+          "severity": "info",
+          "message": "'messages' is not in the STE100 dictionary: allowed only as an approved technical noun/verb (rules 1.5, 1.12)"
+        },
+        {
+          "file": "/home/Qtmd/skills/ste-writing-workspace/iteration-2/eval-strict-error-messages/with_skill/outputs/errors.md",
+          "line": 3,
+          "col": 5,
+          "rule": "D01",
+          "severity": "error",
+          "message": "'file' (v) is not approved in STE100: use REMOVE (v)"
+        },
+        {
+          "file": "/home/Qtmd/skills/ste-writing-workspace/iteration-2/eval-strict-error-messages/with_skill/outputs/errors.md",
+          "line": 10,
+          "col": 10,
+          "rule": "D02",
+          "severity": "info",
+          "message": "'path' is not in the STE100 dictionary: allowed only as an approved technical noun/verb (rules 1.5, 1.12)"
+        },
+        {
+          "file": "/home/Qtmd/skills/ste-writing-workspace/iteration-2/eval-strict-error-messages/with_skill/outputs/errors.md",
+          "line": 10,
+          "col": 22,
+          "rule": "D02",
+          "severity": "info",
+          "message": "'config' is not in the STE100 dictionary: allowed only as an approved technical noun/verb (rules 1.5, 1.12)"
+        },
+        {
+          "file": "/home/Qtmd/skills/ste-writing-workspace/iteration-2/eval-strict-error-messages/with_skill/outputs/errors.md",
+          "line": 10,
+          "col": 29,
+          "rule": "D01",
+          "severity": "error",
+          "message": "'file' (v) is not approved in STE100: use REMOVE (v)"
+        },
+        {
+          "file": "/home/Qtmd/skills/ste-writing-workspace/iteration-2/eval-strict-error-messages/with_skill/outputs/errors.md",
+          "line": 10,
+          "col": 43,
+          "rule": "D02",
+          "severity": "info",
+          "message": "'command' is not in the STE100 dictionary: allowed only as an approved technical noun/verb (rules 1.5, 1.12)"
+        },
+        {
+          "file": "/home/Qtmd/skills/ste-writing-workspace/iteration-2/eval-strict-error-messages/with_skill/outputs/errors.md",
+          "line": 10,
+          "col": 51,
+          "rule": "D02",
+          "severity": "info",
+          "message": "'line' is not in the STE100 dictionary: allowed only as an approved technical noun/verb (rules 1.5, 1.12)"
+        },
+        {
+          "file": "/home/Qtmd/skills/ste-writing-workspace/iteration-2/eval-strict-error-messages/with_skill/outputs/errors.md",
+          "line": 20,
+          "col": 29,
+          "rule": "D01",
+          "severity": "error",
+          "message": "'file' (v) is not approved in STE100: use REMOVE (v)"
+        },
+        {
+          "file": "/home/Qtmd/skills/ste-writing-workspace/iteration-2/eval-strict-error-messages/with_skill/outputs/errors.md",
+          "line": 20,
+          "col": 79,
+          "rule": "D02",
+          "severity": "info",
+          "message": "'text' is not in the STE100 dictionary: allowed only as an approved technical noun/verb (rules 1.5, 1.12)"
+        },
+        {
+          "file": "/home/Qtmd/skills/ste-writing-workspace/iteration-2/eval-strict-error-messages/with_skill/outputs/errors.md",
+          "line": 20,
+          "col": 98,
+          "rule": "D02",
+          "severity": "info",
+          "message": "'parser' is not in the STE100 dictionary: allowed only as an approved technical noun/verb (rules 1.5, 1.12)"
+        },
+        {
+          "file": "/home/Qtmd/skills/ste-writing-workspace/iteration-2/eval-strict-error-messages/with_skill/outputs/errors.md",
+          "line": 22,
+          "col": 13,
+          "rule": "D02",
+          "severity": "info",
+          "message": "'field' is not in the STE100 dictionary: allowed only as an approved technical noun/verb (rules 1.5, 1.12)"
+        },
+        {
+          "file": "/home/Qtmd/skills/ste-writing-workspace/iteration-2/eval-strict-error-messages/with_skill/outputs/errors.md",
+          "line": 29,
+          "col": 57,
+          "rule": "D01",
+          "severity": "error",
+          "message": "'file' (v) is not approved in STE100: use REMOVE (v)"
+        },
+        {
+          "file": "/home/Qtmd/skills/ste-writing-workspace/iteration-2/eval-strict-error-messages/with_skill/outputs/errors.md",
+          "line": 39,
+          "col": 30,
+          "rule": "D01",
+          "severity": "error",
+          "message": "'file' (v) is not approved in STE100: use REMOVE (v)"
+        }
+      ],
+      "by_rule": {
+        "D02": 8,
+        "D01": 5
+      },
+      "by_severity": {
+        "info": 8,
+        "error": 5
+      }
+    }
+  },
+  "totals": {
+    "D02": 8,
+    "D01": 5
+  }
+}

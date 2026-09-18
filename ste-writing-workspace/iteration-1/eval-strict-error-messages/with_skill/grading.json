@@ -1,0 +1,50 @@
+{
+  "assertion_results": [
+    {
+      "text": "outputs/errors.md exists with exactly four messages covering the four cases",
+      "passed": true,
+      "evidence": "Four sections: 'Path not found', 'Incorrect YAML', 'Missing necessary field', 'Value out of range'."
+    },
+    {
+      "text": "Each message states the problem and the corrective action",
+      "passed": true,
+      "evidence": "'cannot find /etc/app/config.yaml. Make sure that the path is correct.'; 'Correct the syntax. Then start the command again.'; 'Add the field timeout.'; 'Set a value between 1 and 600.'"
+    },
+    {
+      "text": "No contractions (linter W02 clean)",
+      "passed": true,
+      "evidence": "lint.json: zero W02 findings."
+    },
+    {
+      "text": "No em/en dashes (linter P01 clean)",
+      "passed": true,
+      "evidence": "lint.json: zero P01 findings."
+    },
+    {
+      "text": "Each message is 30 words or fewer of message text",
+      "passed": true,
+      "evidence": "Longest message (Incorrect YAML) is 22 words; whole file is 95 words."
+    },
+    {
+      "text": "Strict vocabulary: zero D01 findings on the message text, excluding technical nouns kept under STE100 rule 1.5 (for example 'file' as a noun)",
+      "passed": true,
+      "evidence": "lint.json: 0 D01; only 14 D02 info findings (yaml, config, timeout \u2014 project technical nouns, allowed by STE100 rule 1.5). Notable: used 'necessary' (approved) where the prompt said 'required' (not approved); 'start the command again' instead of not-approved 'run'."
+    },
+    {
+      "text": "Output contains only the requested messages and minimal labels",
+      "passed": true,
+      "evidence": "File is a title plus four headed messages; no preamble, no extra rule lists."
+    },
+    {
+      "text": "No invented specifics (added in iteration-2 review of the assertion set)",
+      "passed": false,
+      "evidence": "Hardcodes invented values: /etc/app/config.yaml, line 12 column 4, field 'timeout', value 900, range 1-600."
+    }
+  ],
+  "summary": {
+    "passed": 7,
+    "failed": 1,
+    "total": 8,
+    "pass_rate": 0.875
+  }
+}

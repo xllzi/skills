@@ -1,0 +1,22 @@
+{
+  "blind_scores": {
+    "a": {
+      "clarity": 5,
+      "concision": 4,
+      "coverage": 5,
+      "plain_style": 4
+    },
+    "b": {
+      "clarity": 4,
+      "concision": 4,
+      "coverage": 4,
+      "plain_style": 4
+    },
+    "winner": "A",
+    "reason": "Both read as plain human prose with short sentences, no contractions, and no em dashes, but A keeps more of the original facts (that logs are searchable and readable together, and that the transformation engine runs before storage) while B drops the search purpose and adds an unsupported \"processes logs quickly\" claim. A's feature bullets are noun fragments rather than sentences, which is slightly less conversational than B's, but they stay closer to the source wording. A wins on coverage without losing much clarity."
+  },
+  "mapping": {
+    "A": "without_skill",
+    "B": "with_skill"
+  }
+}

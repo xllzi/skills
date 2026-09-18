@@ -34,11 +34,6 @@ PUNCTUATION
 STRUCTURE
 - One topic per paragraph, max six sentences. For steps, use a numbered vertical list, one action per item, imperative form. Put a condition before its command.
 
-CONTENT
-- Keep the facts and the purpose of the source text. Shorten wording, not information. If a fact does not fit the length cap, split the sentence or move the fact; do not drop it.
-- Do not invent specifics. No made-up numbers, paths, names, or examples. When the user gives no value, use a placeholder in angle brackets, for example <path>, and say what fills it.
-- Keep the user's exact names (fields, commands, files) as quoted literals, even when the name is not an approved word. The name is data, not prose.
-
 ## Modes
 
 - **strict**: procedures, runbooks, safety text, error messages: apply every rule and both length caps. Only approved words plus your project's technical nouns and verbs.
@@ -53,10 +48,7 @@ CONTENT
 ```bash
 python scripts/ste_lint.py <file>            # STE-flavored
 python scripts/ste_lint.py --strict <file>   # strict
-python scripts/ste_lint.py --word <word>     # one word vs the STE100 dictionary
 ```
-
-In strict mode, check candidate words with `--word`. Do not read the dictionary file itself: it is large and the linter already reads it.
 
 3. Fix every error. Check warnings one by one: passive voice (V01) and condition order (S04) are heuristics, confirm before you change the text.
 4. Run the linter again until it reports no errors. Use `--ignore <rule ids>` only when a rule does not apply to the document type.

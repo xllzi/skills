@@ -1,0 +1,55 @@
+{
+  "assertion_results": [
+    {
+      "text": "outputs/readme.md exists and preserves the core facts",
+      "passed": true,
+      "evidence": "All six facts present: 'collects logs from your hosts and keeps them in one place', collector + transformation engine pipeline, 'Install the agent on each host', 'more than 50 tools', 'security controls for enterprise use', 'Scales to petabytes'."
+    },
+    {
+      "text": "No marketing adjectives (linter W03 clean)",
+      "passed": true,
+      "evidence": "lint.json: zero findings; input's 'cutting-edge', 'robust', 'seamlessly', 'powerful', 'world-class' all removed."
+    },
+    {
+      "text": "No em/en dashes (linter P01 clean)",
+      "passed": true,
+      "evidence": "lint.json: zero P01 findings; input's em dash removed."
+    },
+    {
+      "text": "No contractions (linter W02 clean)",
+      "passed": true,
+      "evidence": "lint.json: zero W02 findings; input's 'It's', 'doesn't' rewritten."
+    },
+    {
+      "text": "No AI-slop phrases (linter W04 clean)",
+      "passed": true,
+      "evidence": "lint.json: zero W04 findings; 'It's important to note', 'Additionally', 'Furthermore', 'Moreover' all gone."
+    },
+    {
+      "text": "No sentence over 25 words (linter S01 clean)",
+      "passed": true,
+      "evidence": "lint.json: zero S01 findings."
+    },
+    {
+      "text": "No unjustified passive voice in the text",
+      "passed": true,
+      "evidence": "Zero V01 findings; human read confirms active voice throughout ('The collector gathers logs')."
+    },
+    {
+      "text": "Numbered steps have one action per item (linter S03 clean)",
+      "passed": true,
+      "evidence": "lint.json: zero S03 findings; install steps are '1. Install the agent on each host. 2. Start the agent.'"
+    },
+    {
+      "text": "No invented specifics (added in iteration-2 review of the assertion set)",
+      "passed": true,
+      "evidence": "'It processes logs quickly' de-slops the source's 'blazing fast'; no other additions. The iter-1 judge's 'searchable together' praise for the baseline was itself an invention \u2014 not in the source."
+    }
+  ],
+  "summary": {
+    "passed": 9,
+    "failed": 0,
+    "total": 9,
+    "pass_rate": 1.0
+  }
+}

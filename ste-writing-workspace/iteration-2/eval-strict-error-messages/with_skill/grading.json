@@ -1,0 +1,13 @@
+{
+  "assertion_results": [
+    {"text": "outputs/errors.md exists with exactly four messages covering the four cases", "passed": true, "evidence": "Four sections: 'The file is not found', 'The YAML is not correct', 'A necessary field is missing', 'The value is out of range'."},
+    {"text": "Each message states the problem and the corrective action", "passed": true, "evidence": "'Make sure that the path is correct, then try again.'; 'Correct the YAML, then try again.'; 'Add the field <field> to the file <path>.'; 'Set the field <field> to a value between <minimum> and <maximum>.'"},
+    {"text": "No contractions (linter W02 clean)", "passed": true, "evidence": "lint.json: zero W02 findings."},
+    {"text": "No em/en dashes (linter P01 clean)", "passed": true, "evidence": "lint.json: zero P01 findings."},
+    {"text": "Each message is 30 words or fewer of message text", "passed": true, "evidence": "Longest message (value out of range) is 28 words."},
+    {"text": "Strict vocabulary: zero D01 findings on the message text, excluding technical nouns kept under STE100 rule 1.5", "passed": true, "evidence": "4 D01 findings on message text, all the same documented false-positive pattern: 'file' as a noun matched against not-approved 'file (v)'; the linter has no POS tagging (docs/linter.md 'Heuristics and limits') and 'file' is a rule-1.5 technical noun for any software project. No other D01s."},
+    {"text": "Output contains only the requested messages and minimal labels", "passed": true, "evidence": "Title, four headed messages in code blocks, and one line per placeholder saying what fills it — the explanation lines are required by the new CONTENT rule."},
+    {"text": "No invented specifics: messages use placeholders for paths, fields, and values not given in the prompt", "passed": true, "evidence": "All variable text is placeholdered: <path>, <number>, <message>, <field>, <value>, <minimum>, <maximum> — each with a fill explanation. Fixes the iteration-1 with_skill hardcoding failure."}
+  ],
+  "summary": {"passed": 8, "failed": 0, "total": 8, "pass_rate": 1.0}
+}

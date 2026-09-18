@@ -1,0 +1,22 @@
+{
+  "blind_scores": {
+    "a": {
+      "clarity": 5,
+      "concision": 4,
+      "coverage": 5,
+      "plain_style": 5
+    },
+    "b": {
+      "clarity": 4,
+      "concision": 5,
+      "coverage": 3,
+      "plain_style": 3
+    },
+    "winner": "A",
+    "reason": "A uses angle-bracket placeholders so the messages are reusable and keeps the controlled style exactly (declarative, no contractions, labeled ERROR/Cause/Action), while B hardcodes a path and values it was never given and drifts from the requested terms (\"incorrect YAML\", \"necessary field\"). B is tighter and lacks A's unrequested rules section, but its invented specifics and less controlled phrasing (\"start the command\") cost it coverage and style. A's only flaw is the extra rules block, which is useful but was not asked for."
+  },
+  "mapping": {
+    "A": "without_skill",
+    "B": "with_skill"
+  }
+}

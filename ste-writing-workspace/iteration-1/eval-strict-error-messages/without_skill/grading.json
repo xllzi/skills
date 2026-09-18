@@ -1,0 +1,50 @@
+{
+  "assertion_results": [
+    {
+      "text": "outputs/errors.md exists with exactly four messages covering the four cases",
+      "passed": true,
+      "evidence": "Four numbered messages: file not found, invalid YAML, missing required field, value out of range."
+    },
+    {
+      "text": "Each message states the problem and the corrective action",
+      "passed": true,
+      "evidence": "ERROR/Cause/Action structure gives problem and corrective action for each case."
+    },
+    {
+      "text": "No contractions (linter W02 clean)",
+      "passed": false,
+      "evidence": "W02: contraction 'don't' appears in the appended 'Rules for these messages' section."
+    },
+    {
+      "text": "No em/en dashes (linter P01 clean)",
+      "passed": true,
+      "evidence": "lint.json: zero P01 findings."
+    },
+    {
+      "text": "Each message is 30 words or fewer of message text",
+      "passed": true,
+      "evidence": "Longest message (value out of range) is 27 words."
+    },
+    {
+      "text": "Strict vocabulary: zero D01 findings on the message text, excluding technical nouns kept under STE100 rule 1.5 (for example 'file' as a noun)",
+      "passed": false,
+      "evidence": "13 D01 findings on the extracted message text: 'run' (use OPERATE), 'invalid', 'action' (use STEP/PROCEDURE/TASK), 'file' (POS false positive), 'permitted', 'contains'. 19 D01 in the file overall."
+    },
+    {
+      "text": "Output contains only the requested messages and minimal labels",
+      "passed": false,
+      "evidence": "Adds an intro paragraph and an 11-bullet 'Rules for these messages' style guide \u2014 unrequested content; file is 334 words vs 95 with-skill."
+    },
+    {
+      "text": "No invented specifics (added in iteration-2 review of the assertion set)",
+      "passed": true,
+      "evidence": "Uses angle-bracket placeholders (<path>, <line>, <field>, <value>, <min>, <max>) for all variable text."
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 3,
+    "total": 8,
+    "pass_rate": 0.625
+  }
+}

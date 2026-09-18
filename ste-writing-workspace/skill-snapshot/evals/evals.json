@@ -1,0 +1,53 @@
+{
+  "skill_name": "ste-writing",
+  "evals": [
+    {
+      "id": 1,
+      "name": "eval-rewrite-slop-readme",
+      "prompt": "the readme in slop_readme.md sounds like marketing AI garbage. rewrite it so it sounds like a person wrote it, plain and clear. save the rewritten version to outputs/readme.md",
+      "expected_output": "A rewritten README that keeps the factual content (what Logboat does, install summary, features) but drops marketing adjectives, passive voice, nominalizations, contractions, and the em dash. Short sentences, one topic per paragraph.",
+      "files": ["evals/files/slop_readme.md"],
+      "assertions": [
+        "outputs/readme.md exists and preserves the core facts: log collection to one place, collector/transformation pipeline, agent install per host, 50+ integrations, enterprise security, petabyte scaling",
+        "No marketing adjectives (linter W03 clean)",
+        "No em/en dashes (linter P01 clean)",
+        "No contractions (linter W02 clean)",
+        "No AI-slop phrases (linter W04 clean)",
+        "No sentence over 25 words (linter S01 clean)",
+        "No unjustified passive voice in the text (human review confirms each V01 finding)",
+        "Numbered steps have one action per item (linter S03 clean)"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "eval-write-pr-description",
+      "prompt": "Write a PR description for a change that adds retry logic with exponential backoff to the HTTP client in internal/net/client.go. The change fixes timeout failures we kept seeing on flaky networks. Cover: what changed, why, and how it was tested (unit tests plus a soak test against a fault-injecting proxy). Save it to outputs/pr_description.md",
+      "expected_output": "A PR description with what/why/testing covered, in plain concise language: no AI-slop phrases, no marketing adjectives, active voice, sentences within the length caps.",
+      "files": [],
+      "assertions": [
+        "outputs/pr_description.md exists and covers: what changed, why, and how it was tested (unit tests and soak test)",
+        "No em/en dashes (linter P01 clean)",
+        "No sentence over 25 words (linter S01 clean)",
+        "No marketing adjectives or AI-slop phrases (linter W03/W04 clean)",
+        "Concise: body is 500 words or fewer",
+        "No unjustified passive voice in the text (human review confirms each V01 finding)"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "eval-strict-error-messages",
+      "prompt": "Write the error messages for a CLI tool that validates config files. I need one message for each case: file not found, invalid YAML, a missing required field, and a value out of range. These go straight to users in a terminal, and our docs standard is a controlled, safety-manual style of English. Save them to outputs/errors.md",
+      "expected_output": "Four error messages in strict controlled English: terse, imperative or plainly declarative, approved vocabulary where possible, no contractions, no em dashes, one idea per message.",
+      "files": [],
+      "assertions": [
+        "outputs/errors.md exists with exactly four messages covering: file not found, invalid YAML, missing required field, value out of range",
+        "Each message states the problem and the corrective action",
+        "No contractions (linter W02 clean)",
+        "No em/en dashes (linter P01 clean)",
+        "Each message is 30 words or fewer of message text",
+        "Strict vocabulary: zero D01 (not-approved word) findings on the message text itself",
+        "Output contains only the requested messages and minimal labels: no preamble, essays, or extra rule lists"
+      ]
+    }
+  ]
+}

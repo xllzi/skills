@@ -1,0 +1,98 @@
+{
+  "strict": true,
+  "files": {
+    "errors.md": {
+      "findings": [
+        {
+          "file": "/home/Qtmd/skills/ste-writing-workspace/iteration-2/eval-strict-error-messages/old_skill/outputs/errors.md",
+          "line": 1,
+          "col": 7,
+          "rule": "D02",
+          "severity": "info",
+          "message": "'messages' is not in the STE100 dictionary: allowed only as an approved technical noun/verb (rules 1.5, 1.12)"
+        },
+        {
+          "file": "/home/Qtmd/skills/ste-writing-workspace/iteration-2/eval-strict-error-messages/old_skill/outputs/errors.md",
+          "line": 3,
+          "col": 1,
+          "rule": "D02",
+          "severity": "info",
+          "message": "'Configuration' is not in the STE100 dictionary: allowed only as an approved technical noun/verb (rules 1.5, 1.12)"
+        },
+        {
+          "file": "/home/Qtmd/skills/ste-writing-workspace/iteration-2/eval-strict-error-messages/old_skill/outputs/errors.md",
+          "line": 5,
+          "col": 24,
+          "rule": "D02",
+          "severity": "info",
+          "message": "'configuration' is not in the STE100 dictionary: allowed only as an approved technical noun/verb (rules 1.5, 1.12)"
+        },
+        {
+          "file": "/home/Qtmd/skills/ste-writing-workspace/iteration-2/eval-strict-error-messages/old_skill/outputs/errors.md",
+          "line": 5,
+          "col": 39,
+          "rule": "D02",
+          "severity": "info",
+          "message": "'config' is not in the STE100 dictionary: allowed only as an approved technical noun/verb (rules 1.5, 1.12)"
+        },
+        {
+          "file": "/home/Qtmd/skills/ste-writing-workspace/iteration-2/eval-strict-error-messages/old_skill/outputs/errors.md",
+          "line": 5,
+          "col": 46,
+          "rule": "D02",
+          "severity": "info",
+          "message": "'yaml' is not in the STE100 dictionary: allowed only as an approved technical noun/verb (rules 1.5, 1.12)"
+        },
+        {
+          "file": "/home/Qtmd/skills/ste-writing-workspace/iteration-2/eval-strict-error-messages/old_skill/outputs/errors.md",
+          "line": 6,
+          "col": 33,
+          "rule": "D02",
+          "severity": "info",
+          "message": "'path' is not in the STE100 dictionary: allowed only as an approved technical noun/verb (rules 1.5, 1.12)"
+        },
+        {
+          "file": "/home/Qtmd/skills/ste-writing-workspace/iteration-2/eval-strict-error-messages/old_skill/outputs/errors.md",
+          "line": 10,
+          "col": 17,
+          "rule": "D02",
+          "severity": "info",
+          "message": "'syntax' is not in the STE100 dictionary: allowed only as an approved technical noun/verb (rules 1.5, 1.12)"
+        },
+        {
+          "file": "/home/Qtmd/skills/ste-writing-workspace/iteration-2/eval-strict-error-messages/old_skill/outputs/errors.md",
+          "line": 10,
+          "col": 75,
+          "rule": "D02",
+          "severity": "info",
+          "message": "'line' is not in the STE100 dictionary: allowed only as an approved technical noun/verb (rules 1.5, 1.12)"
+        },
+        {
+          "file": "/home/Qtmd/skills/ste-writing-workspace/iteration-2/eval-strict-error-messages/old_skill/outputs/errors.md",
+          "line": 13,
+          "col": 19,
+          "rule": "D02",
+          "severity": "info",
+          "message": "'field' is not in the STE100 dictionary: allowed only as an approved technical noun/verb (rules 1.5, 1.12)"
+        },
+        {
+          "file": "/home/Qtmd/skills/ste-writing-workspace/iteration-2/eval-strict-error-messages/old_skill/outputs/errors.md",
+          "line": 15,
+          "col": 78,
+          "rule": "D02",
+          "severity": "info",
+          "message": "'timeout' is not in the STE100 dictionary: allowed only as an approved technical noun/verb (rules 1.5, 1.12)"
+        }
+      ],
+      "by_rule": {
+        "D02": 10
+      },
+      "by_severity": {
+        "info": 10
+      }
+    }
+  },
+  "totals": {
+    "D02": 10
+  }
+}

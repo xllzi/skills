@@ -1,0 +1,55 @@
+{
+  "assertion_results": [
+    {
+      "text": "outputs/readme.md exists and preserves the core facts",
+      "passed": true,
+      "evidence": "Facts preserved: 'collects logs from your hosts and sends them to one place', collector agent + transformation engine, 'Install the agent on each host', 'more than 50 tools', 'enterprise deployments', 'Scaling to petabytes'."
+    },
+    {
+      "text": "No marketing adjectives (linter W03 clean)",
+      "passed": true,
+      "evidence": "lint.json: zero W03 findings."
+    },
+    {
+      "text": "No em/en dashes (linter P01 clean)",
+      "passed": true,
+      "evidence": "lint.json: zero P01 findings."
+    },
+    {
+      "text": "No contractions (linter W02 clean)",
+      "passed": true,
+      "evidence": "lint.json: zero W02 findings."
+    },
+    {
+      "text": "No AI-slop phrases (linter W04 clean)",
+      "passed": true,
+      "evidence": "lint.json: zero W04 findings."
+    },
+    {
+      "text": "No sentence over 25 words (linter S01 clean)",
+      "passed": true,
+      "evidence": "lint.json: zero S01 findings."
+    },
+    {
+      "text": "No unjustified passive voice in the text",
+      "passed": false,
+      "evidence": "'the transformation engine processes them before they are stored' \u2014 passive 'are stored' with recoverable agent. Linter V01 missed it (STORE not in participle list); the one V01 finding ('Getting started') is a heading false positive."
+    },
+    {
+      "text": "Numbered steps have one action per item (linter S03 clean)",
+      "passed": false,
+      "evidence": "S03: item 2 is 'Start the agent. It finds the log sources on the host by itself, so you do not have to configure them.' \u2014 two sentences in one step."
+    },
+    {
+      "text": "No invented specifics (added in iteration-2 review of the assertion set)",
+      "passed": false,
+      "evidence": "Adds 'so your team can search and read them together' \u2014 a purpose not present in the source text."
+    }
+  ],
+  "summary": {
+    "passed": 6,
+    "failed": 3,
+    "total": 9,
+    "pass_rate": 0.667
+  }
+}

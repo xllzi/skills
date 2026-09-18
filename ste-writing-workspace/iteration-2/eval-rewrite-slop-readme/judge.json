@@ -1,0 +1,22 @@
+{
+  "blind_scores": {
+    "a": {
+      "clarity": 5,
+      "concision": 4,
+      "coverage": 5,
+      "plain_style": 5
+    },
+    "b": {
+      "clarity": 5,
+      "concision": 5,
+      "coverage": 5,
+      "plain_style": 4
+    },
+    "winner": "A",
+    "reason": "A reads like a person organized it \u2014 headings, a direct 'You get one view' \u2014 while B mirrors the source clause by clause in a mechanical way. A gives up a concision point for a dangling single-item numbered list and a thin Dashboard section, but its prose sounds more human. B is slightly tighter yet flatter, so A wins narrowly."
+  },
+  "mapping": {
+    "A": "old_skill",
+    "B": "with_skill"
+  }
+}

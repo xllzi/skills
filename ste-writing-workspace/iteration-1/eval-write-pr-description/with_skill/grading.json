@@ -1,0 +1,45 @@
+{
+  "assertion_results": [
+    {
+      "text": "outputs/pr_description.md exists and covers what/why/testing",
+      "passed": true,
+      "evidence": "Sections 'What changed', 'Why', 'How I tested'; unit tests (backoff schedule, retry count, error classes) and soak test through fault-injecting proxy both described."
+    },
+    {
+      "text": "No em/en dashes (linter P01 clean)",
+      "passed": true,
+      "evidence": "lint.json: zero findings."
+    },
+    {
+      "text": "No sentence over 25 words (linter S01 clean)",
+      "passed": true,
+      "evidence": "lint.json: zero S01 findings."
+    },
+    {
+      "text": "No marketing adjectives or AI-slop phrases (linter W03/W04 clean)",
+      "passed": true,
+      "evidence": "lint.json: zero W03/W04 findings."
+    },
+    {
+      "text": "Concise: body is 500 words or fewer",
+      "passed": true,
+      "evidence": "wc -w: 302 words, 43 lines."
+    },
+    {
+      "text": "No unjustified passive voice in the text",
+      "passed": true,
+      "evidence": "Zero V01 findings; human read confirms active voice ('The client waits before each new try')."
+    },
+    {
+      "text": "No invented specifics (added in iteration-2 review of the assertion set)",
+      "passed": false,
+      "evidence": "Invents design details not in the prompt: jitter ('a small random delay'), idempotent-only retries, default options."
+    }
+  ],
+  "summary": {
+    "passed": 6,
+    "failed": 1,
+    "total": 7,
+    "pass_rate": 0.857
+  }
+}

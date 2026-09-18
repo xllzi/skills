@@ -1,0 +1,22 @@
+{
+  "blind_scores": {
+    "a": {
+      "clarity": 4,
+      "concision": 4,
+      "coverage": 2,
+      "plain_style": 4
+    },
+    "b": {
+      "clarity": 5,
+      "concision": 4,
+      "coverage": 4,
+      "plain_style": 5
+    },
+    "winner": "B",
+    "reason": "Both cover what/why/testing in plain active voice, but A ships with unfilled `<max attempts>`-style placeholders, so it never delivers an actual PR description. B is complete and reviewable, though its specific figures (4 attempts, 100 ms, the soak error-rate drop) are not derivable from the task and would need verification before merge, and its 'Notes for the reviewer' section is slightly beyond scope. On balance B is the more usable output."
+  },
+  "mapping": {
+    "A": "with_skill",
+    "B": "old_skill"
+  }
+}

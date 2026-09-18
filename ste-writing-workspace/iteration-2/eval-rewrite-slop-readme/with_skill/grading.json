@@ -1,0 +1,14 @@
+{
+  "assertion_results": [
+    {"text": "outputs/readme.md exists and preserves the core facts", "passed": true, "evidence": "All facts kept: 'log aggregation platform', 'pipeline architecture', collector + transformation engine, 'observability across your whole stack', 'install the agent on each host', auto-discovery, no configuration, dashboard, '50+ tools', 'enterprise deployments', 'petabytes'."},
+    {"text": "No marketing adjectives (linter W03 clean)", "passed": true, "evidence": "lint.json: zero findings."},
+    {"text": "No em/en dashes (linter P01 clean)", "passed": true, "evidence": "lint.json: zero findings."},
+    {"text": "No contractions (linter W02 clean)", "passed": true, "evidence": "lint.json: zero findings."},
+    {"text": "No AI-slop phrases (linter W04 clean)", "passed": true, "evidence": "lint.json: zero findings."},
+    {"text": "No sentence over 25 words (linter S01 clean)", "passed": true, "evidence": "lint.json: zero findings."},
+    {"text": "No unjustified passive voice in the text", "passed": true, "evidence": "Zero V01 findings; active voice throughout ('The collector ingests the logs')."},
+    {"text": "Numbered steps have one action per item (linter S03 clean)", "passed": true, "evidence": "lint.json: zero S03 findings; install instruction is a single-action sentence."},
+    {"text": "Adds no claims that are not in the source text", "passed": true, "evidence": "'It is fast' de-slops the source's 'blazing fast'; 'helps teams use their log data' de-slops 'empowers teams to leverage their log data'. Nothing else added. Improvement over iteration-1, which dropped the purpose statement."}
+  ],
+  "summary": {"passed": 9, "failed": 0, "total": 9, "pass_rate": 1.0}
+}

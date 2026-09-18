@@ -1,0 +1,11 @@
+{
+  "returncode": 0,
+  "wall_ms": 33219,
+  "total_tokens": 449035,
+  "duration_ms": 30386,
+  "num_turns": 12,
+  "total_cost_usd": 0.641391,
+  "model": [
+    "deepseek-flash"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "blind_scores": {
+    "a": {
+      "clarity": 5,
+      "concision": 5,
+      "coverage": 4,
+      "plain_style": 5
+    },
+    "b": {
+      "clarity": 4,
+      "concision": 3,
+      "coverage": 5,
+      "plain_style": 4
+    },
+    "winner": "A",
+    "reason": "Output A delivers four terse, terminal-ready messages with no extra scaffolding, which matches the request that these go straight to users in a terminal. Output B's placeholder templates are implementable and invent no values, but the per-message placeholder glosses are unrequested content that bloats a document meant to hold error text. A's only weakness is that it hardcodes example values (line 12, timeout 7200, minimum 1), which reads as invented specifics rather than a reusable rule."
+  },
+  "mapping": {
+    "A": "old_skill",
+    "B": "with_skill"
+  }
+}

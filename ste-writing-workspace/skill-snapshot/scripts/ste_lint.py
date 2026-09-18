@@ -540,35 +540,6 @@ SEV_ORDER = {"error": 0, "warning": 1, "info": 2}
 COLORS = {"error": "\033[31m", "warning": "\033[33m", "info": "\033[36m"}
 
 
-def lookup_word(d, word):
-    """Print the STE100 dictionary status of one word as JSON.
-
-    Exit code 1 when the word is not approved (D01 semantics), else 0.
-    """
-    w = word.lower()
-    out = {"word": word}
-    if w in d.approved_vocab:
-        out["status"] = "approved"
-        out["pos"] = sorted(d.approved_pos.get(w, ()))
-        if w in d.banned_forms:  # approved as one pos, banned as another
-            head = d.banned_forms[w]
-            pos, sug, note = d.banned[head]
-            out["mixed"] = {"not_approved_as": pos, "use_instead": sug,
-                            "note": note}
-    elif w in d.banned_forms:
-        head = d.banned_forms[w]
-        pos, sug, note = d.banned[head]
-        out.update(status="not_approved", headword=head, pos=pos,
-                   use_instead=sug, note=note)
-    else:
-        out["status"] = "unknown"
-        out["note"] = ("not in the STE100 dictionary: allowed only as an "
-                       "approved technical noun/verb (rules 1.5, 1.12)")
-    json.dump(out, sys.stdout, indent=1)
-    print()
-    return 1 if out["status"] == "not_approved" else 0
-
-
 def main():
     ap = argparse.ArgumentParser(
         description="Lint text against distilled ASD-STE100 rules.")
@@ -577,16 +548,10 @@ def main():
                     help="full STE100 dictionary checks + lockdown info")
     ap.add_argument("--ignore", default="", help="comma-separated rule ids")
     ap.add_argument("--format", choices=["text", "json"], default="text")
-    ap.add_argument("--word", metavar="WORD",
-                    help="print WORD's STE100 dictionary status as JSON, "
-                         "then exit")
     args = ap.parse_args()
 
-    data = load_dictionary()
-    if args.word:
-        sys.exit(lookup_word(Dict(data), args.word))
-
     ignore = {r.strip() for r in args.ignore.split(",") if r.strip()}
+    data = load_dictionary()
     linter = Linter(data, strict=args.strict, ignore=ignore)
 
     inputs = args.files or ["-"]

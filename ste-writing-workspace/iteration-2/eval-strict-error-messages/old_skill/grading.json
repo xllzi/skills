@@ -1,0 +1,13 @@
+{
+  "assertion_results": [
+    {"text": "outputs/errors.md exists with exactly four messages covering the four cases", "passed": true, "evidence": "Four sections: 'Configuration not found', 'Incorrect YAML', 'Missing mandatory field', 'Value out of range'."},
+    {"text": "Each message states the problem and the corrective action", "passed": true, "evidence": "'Make sure that the name and the path are correct.'; 'Correct the syntax at line 12.'; 'Add the mandatory field and start the tool again.'; 'Set the value to a number between 1 and 3600.'"},
+    {"text": "No contractions (linter W02 clean)", "passed": true, "evidence": "lint.json: zero W02 findings."},
+    {"text": "No em/en dashes (linter P01 clean)", "passed": true, "evidence": "lint.json: zero P01 findings."},
+    {"text": "Each message is 30 words or fewer of message text", "passed": true, "evidence": "Longest message (value out of range) is 26 words."},
+    {"text": "Strict vocabulary: zero D01 findings on the message text, excluding technical nouns kept under STE100 rule 1.5", "passed": true, "evidence": "Message-text lint: zero D01; only D02 info findings (configuration, yaml, path, timeout — technical nouns). Note 'mandatory' used for the requested 'required': both approved-adjacent substitutions."},
+    {"text": "Output contains only the requested messages and minimal labels", "passed": true, "evidence": "Title plus four headed messages; no extras."},
+    {"text": "No invented specifics: messages use placeholders for paths, fields, and values not given in the prompt", "passed": false, "evidence": "Hardcoded invented values: 'config.yaml', 'line 12', field 'timeout', value 7200, range 1-3600. Same failure mode as iteration-1 with_skill; the old skill has no no-invention rule."}
+  ],
+  "summary": {"passed": 7, "failed": 1, "total": 8, "pass_rate": 0.875}
+}

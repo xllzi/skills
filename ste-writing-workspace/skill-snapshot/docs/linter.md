@@ -13,13 +13,7 @@ python3 scripts/ste_lint.py --strict FILE     # strict, adds dictionary checks
 python3 scripts/ste_lint.py --format json FILE
 python3 scripts/ste_lint.py --ignore W01,V01 FILE
 python3 scripts/ste_lint.py < FILE            # reads standard input
-python3 scripts/ste_lint.py --word WORD       # prints WORD's dictionary status as JSON
 ```
-
-- `--word` prints one word's STE100 status (`approved`, `not_approved`, or
-  `unknown`, plus `mixed` when approved only as a different part of speech)
-  as JSON and exits: code 1 for `not_approved`, else 0. Use it to check
-  candidate words in strict mode instead of reading the dictionary file.
 
 - The exit code is 1 when a finding has the severity error, and 0 otherwise.
 - `--ignore` takes a comma-separated list of rule ids.

@@ -1,0 +1,73 @@
+{
+  "metadata": {
+    "skill": "ste-writing",
+    "iteration": 1,
+    "runs_per_config": 3,
+    "harness": "claude code 2.1.276 headless (-p)",
+    "model": "deepseek-flash"
+  },
+  "run_summary": {
+    "with_skill": {
+      "pass_rate": {
+        "mean": 1.0,
+        "values": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "time_seconds": {
+        "mean": 34.2,
+        "values": [
+          28.0,
+          47.1,
+          27.6
+        ]
+      },
+      "tokens": {
+        "mean": 368061,
+        "values": [
+          227446,
+          615792,
+          260946
+        ]
+      }
+    },
+    "without_skill": {
+      "pass_rate": {
+        "mean": 0.551,
+        "values": [
+          0.75,
+          0.571,
+          0.333
+        ]
+      },
+      "time_seconds": {
+        "mean": 13.3,
+        "values": [
+          8.1,
+          15.4,
+          16.3
+        ]
+      },
+      "tokens": {
+        "mean": 84423,
+        "values": [
+          87448,
+          63218,
+          102602
+        ]
+      }
+    },
+    "delta": {
+      "pass_rate": 0.449,
+      "time_seconds": 21.0,
+      "tokens": 283639
+    }
+  },
+  "blind_judge": {
+    "eval-rewrite-slop-readme": "without_skill",
+    "eval-write-pr-description": "with_skill",
+    "eval-strict-error-messages": "without_skill"
+  }
+}

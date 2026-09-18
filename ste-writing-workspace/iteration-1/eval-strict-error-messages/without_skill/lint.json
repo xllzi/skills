@@ -1,0 +1,481 @@
+{
+  "strict": true,
+  "files": {
+    "errors.md": {
+      "findings": [
+        {
+          "file": "/home/Qtmd/skills/ste-writing-workspace/iteration-1/eval-strict-error-messages/without_skill/outputs/errors.md",
+          "line": 1,
+          "col": 7,
+          "rule": "D02",
+          "severity": "info",
+          "message": "'messages' is not in the STE100 dictionary: allowed only as an approved technical noun/verb (rules 1.5, 1.12)"
+        },
+        {
+          "file": "/home/Qtmd/skills/ste-writing-workspace/iteration-1/eval-strict-error-messages/without_skill/outputs/errors.md",
+          "line": 1,
+          "col": 17,
+          "rule": "D02",
+          "severity": "info",
+          "message": "'configuration' is not in the STE100 dictionary: allowed only as an approved technical noun/verb (rules 1.5, 1.12)"
+        },
+        {
+          "file": "/home/Qtmd/skills/ste-writing-workspace/iteration-1/eval-strict-error-messages/without_skill/outputs/errors.md",
+          "line": 1,
+          "col": 31,
+          "rule": "D01",
+          "severity": "error",
+          "message": "'file' (v) is not approved in STE100: use REMOVE (v)"
+        },
+        {
+          "file": "/home/Qtmd/skills/ste-writing-workspace/iteration-1/eval-strict-error-messages/without_skill/outputs/errors.md",
+          "line": 1,
+          "col": 36,
+          "rule": "D02",
+          "severity": "info",
+          "message": "'validator' is not in the STE100 dictionary: allowed only as an approved technical noun/verb (rules 1.5, 1.12)"
+        },
+        {
+          "file": "/home/Qtmd/skills/ste-writing-workspace/iteration-1/eval-strict-error-messages/without_skill/outputs/errors.md",
+          "line": 3,
+          "col": 6,
+          "rule": "D02",
+          "severity": "info",
+          "message": "'message' is not in the STE100 dictionary: allowed only as an approved technical noun/verb (rules 1.5, 1.12)"
+        },
+        {
+          "file": "/home/Qtmd/skills/ste-writing-workspace/iteration-1/eval-strict-error-messages/without_skill/outputs/errors.md",
+          "line": 3,
+          "col": 26,
+          "rule": "D02",
+          "severity": "info",
+          "message": "'terminal' is not in the STE100 dictionary: allowed only as an approved technical noun/verb (rules 1.5, 1.12)"
+        },
+        {
+          "file": "/home/Qtmd/skills/ste-writing-workspace/iteration-1/eval-strict-error-messages/without_skill/outputs/errors.md",
+          "line": 3,
+          "col": 73,
+          "rule": "D01",
+          "severity": "error",
+          "message": "'action' (n) is not approved in STE100: use STEP (n); PROCEDURE (n); TASK (n)"
+        },
+        {
+          "file": "/home/Qtmd/skills/ste-writing-workspace/iteration-1/eval-strict-error-messages/without_skill/outputs/errors.md",
+          "line": 4,
+          "col": 1,
+          "rule": "D03",
+          "severity": "info",
+          "message": "'Use': approved only as (v); do not use as (n): OPERATION (n); USE (v)"
+        },
+        {
+          "file": "/home/Qtmd/skills/ste-writing-workspace/iteration-1/eval-strict-error-messages/without_skill/outputs/errors.md",
+          "line": 4,
+          "col": 9,
+          "rule": "D01",
+          "severity": "error",
+          "message": "'exact' (adj) is not approved in STE100: use ACCURATE (adj); CORRECT (adj)"
+        },
+        {
+          "file": "/home/Qtmd/skills/ste-writing-workspace/iteration-1/eval-strict-error-messages/without_skill/outputs/errors.md",
+          "line": 4,
+          "col": 15,
+          "rule": "D02",
+          "severity": "info",
+          "message": "'text' is not in the STE100 dictionary: allowed only as an approved technical noun/verb (rules 1.5, 1.12)"
+        },
+        {
+          "file": "/home/Qtmd/skills/ste-writing-workspace/iteration-1/eval-strict-error-messages/without_skill/outputs/errors.md",
+          "line": 4,
+          "col": 20,
+          "rule": "D03",
+          "severity": "info",
+          "message": "'below': approved only as (prep); do not use as (adv): FOLLOW (v); THESE (adj)"
+        },
+        {
+          "file": "/home/Qtmd/skills/ste-writing-workspace/iteration-1/eval-strict-error-messages/without_skill/outputs/errors.md",
+          "line": 4,
+          "col": 47,
+          "rule": "D02",
+          "severity": "info",
+          "message": "'angle' is not in the STE100 dictionary: allowed only as an approved technical noun/verb (rules 1.5, 1.12)"
+        },
+        {
+          "file": "/home/Qtmd/skills/ste-writing-workspace/iteration-1/eval-strict-error-messages/without_skill/outputs/errors.md",
+          "line": 4,
+          "col": 53,
+          "rule": "D02",
+          "severity": "info",
+          "message": "'brackets' is not in the STE100 dictionary: allowed only as an approved technical noun/verb (rules 1.5, 1.12)"
+        },
+        {
+          "file": "/home/Qtmd/skills/ste-writing-workspace/iteration-1/eval-strict-error-messages/without_skill/outputs/errors.md",
+          "line": 4,
+          "col": 71,
+          "rule": "D01",
+          "severity": "error",
+          "message": "'real' (adj) is not approved in STE100: use AGREE (v)"
+        },
+        {
+          "file": "/home/Qtmd/skills/ste-writing-workspace/iteration-1/eval-strict-error-messages/without_skill/outputs/errors.md",
+          "line": 6,
+          "col": 4,
+          "rule": "D01",
+          "severity": "error",
+          "message": "'file' (v) is not approved in STE100: use REMOVE (v)"
+        },
+        {
+          "file": "/home/Qtmd/skills/ste-writing-workspace/iteration-1/eval-strict-error-messages/without_skill/outputs/errors.md",
+          "line": 13,
+          "col": 4,
+          "rule": "D02",
+          "severity": "info",
+          "message": "'Invalid' is not in the STE100 dictionary: allowed only as an approved technical noun/verb (rules 1.5, 1.12)"
+        },
+        {
+          "file": "/home/Qtmd/skills/ste-writing-workspace/iteration-1/eval-strict-error-messages/without_skill/outputs/errors.md",
+          "line": 21,
+          "col": 12,
+          "rule": "D01",
+          "severity": "error",
+          "message": "'require' (v) is not approved in STE100: use NECESSARY (adj)"
+        },
+        {
+          "file": "/home/Qtmd/skills/ste-writing-workspace/iteration-1/eval-strict-error-messages/without_skill/outputs/errors.md",
+          "line": 21,
+          "col": 21,
+          "rule": "D02",
+          "severity": "info",
+          "message": "'field' is not in the STE100 dictionary: allowed only as an approved technical noun/verb (rules 1.5, 1.12)"
+        },
+        {
+          "file": "/home/Qtmd/skills/ste-writing-workspace/iteration-1/eval-strict-error-messages/without_skill/outputs/errors.md",
+          "line": 36,
+          "col": 1,
+          "rule": "D02",
+          "severity": "info",
+          "message": "'Rules' is not in the STE100 dictionary: allowed only as an approved technical noun/verb (rules 1.5, 1.12)"
+        },
+        {
+          "file": "/home/Qtmd/skills/ste-writing-workspace/iteration-1/eval-strict-error-messages/without_skill/outputs/errors.md",
+          "line": 38,
+          "col": 41,
+          "rule": "D02",
+          "severity": "info",
+          "message": "'two' is not in the STE100 dictionary: allowed only as an approved technical noun/verb (rules 1.5, 1.12)"
+        },
+        {
+          "file": "/home/Qtmd/skills/ste-writing-workspace/iteration-1/eval-strict-error-messages/without_skill/outputs/errors.md",
+          "line": 39,
+          "col": 1,
+          "rule": "D03",
+          "severity": "info",
+          "message": "'Use': approved only as (v); do not use as (n): OPERATION (n); USE (v)"
+        },
+        {
+          "file": "/home/Qtmd/skills/ste-writing-workspace/iteration-1/eval-strict-error-messages/without_skill/outputs/errors.md",
+          "line": 39,
+          "col": 9,
+          "rule": "D01",
+          "severity": "error",
+          "message": "'label' (v) is not approved in STE100: use IDENTIFY (v); LABEL (TN)"
+        },
+        {
+          "file": "/home/Qtmd/skills/ste-writing-workspace/iteration-1/eval-strict-error-messages/without_skill/outputs/errors.md",
+          "line": 40,
+          "col": 11,
+          "rule": "D01",
+          "severity": "error",
+          "message": "'action' (n) is not approved in STE100: use STEP (n); PROCEDURE (n); TASK (n)"
+        },
+        {
+          "file": "/home/Qtmd/skills/ste-writing-workspace/iteration-1/eval-strict-error-messages/without_skill/outputs/errors.md",
+          "line": 40,
+          "col": 18,
+          "rule": "D03",
+          "severity": "info",
+          "message": "'as': approved only as (prep); do not use as (conj): BECAUSE (conj); WHILE (conj); AS FOLLOWS"
+        },
+        {
+          "file": "/home/Qtmd/skills/ste-writing-workspace/iteration-1/eval-strict-error-messages/without_skill/outputs/errors.md",
+          "line": 40,
+          "col": 23,
+          "rule": "D02",
+          "severity": "info",
+          "message": "'command' is not in the STE100 dictionary: allowed only as an approved technical noun/verb (rules 1.5, 1.12)"
+        },
+        {
+          "file": "/home/Qtmd/skills/ste-writing-workspace/iteration-1/eval-strict-error-messages/without_skill/outputs/errors.md",
+          "line": 40,
+          "col": 32,
+          "rule": "D03",
+          "severity": "info",
+          "message": "'Use': approved only as (v); do not use as (n): OPERATION (n); USE (v)"
+        },
+        {
+          "file": "/home/Qtmd/skills/ste-writing-workspace/iteration-1/eval-strict-error-messages/without_skill/outputs/errors.md",
+          "line": 40,
+          "col": 40,
+          "rule": "D02",
+          "severity": "info",
+          "message": "'imperative' is not in the STE100 dictionary: allowed only as an approved technical noun/verb (rules 1.5, 1.12)"
+        },
+        {
+          "file": "/home/Qtmd/skills/ste-writing-workspace/iteration-1/eval-strict-error-messages/without_skill/outputs/errors.md",
+          "line": 40,
+          "col": 51,
+          "rule": "D01",
+          "severity": "error",
+          "message": "'form' (n/v) is not approved in STE100: use SHAPE (n); BE (v)"
+        },
+        {
+          "file": "/home/Qtmd/skills/ste-writing-workspace/iteration-1/eval-strict-error-messages/without_skill/outputs/errors.md",
+          "line": 41,
+          "col": 11,
+          "rule": "D02",
+          "severity": "info",
+          "message": "'sentence' is not in the STE100 dictionary: allowed only as an approved technical noun/verb (rules 1.5, 1.12)"
+        },
+        {
+          "file": "/home/Qtmd/skills/ste-writing-workspace/iteration-1/eval-strict-error-messages/without_skill/outputs/errors.md",
+          "line": 41,
+          "col": 26,
+          "rule": "D02",
+          "severity": "info",
+          "message": "'words' is not in the STE100 dictionary: allowed only as an approved technical noun/verb (rules 1.5, 1.12)"
+        },
+        {
+          "file": "/home/Qtmd/skills/ste-writing-workspace/iteration-1/eval-strict-error-messages/without_skill/outputs/errors.md",
+          "line": 42,
+          "col": 1,
+          "rule": "D03",
+          "severity": "info",
+          "message": "'Use': approved only as (v); do not use as (n): OPERATION (n); USE (v)"
+        },
+        {
+          "file": "/home/Qtmd/skills/ste-writing-workspace/iteration-1/eval-strict-error-messages/without_skill/outputs/errors.md",
+          "line": 42,
+          "col": 9,
+          "rule": "D01",
+          "severity": "error",
+          "message": "'present' (adj/v) is not approved in STE100: use BE (v); GIVE (v); SHOW (v)"
+        },
+        {
+          "file": "/home/Qtmd/skills/ste-writing-workspace/iteration-1/eval-strict-error-messages/without_skill/outputs/errors.md",
+          "line": 42,
+          "col": 17,
+          "rule": "D02",
+          "severity": "info",
+          "message": "'tense' is not in the STE100 dictionary: allowed only as an approved technical noun/verb (rules 1.5, 1.12)"
+        },
+        {
+          "file": "/home/Qtmd/skills/ste-writing-workspace/iteration-1/eval-strict-error-messages/without_skill/outputs/errors.md",
+          "line": 43,
+          "col": 1,
+          "rule": "D03",
+          "severity": "info",
+          "message": "'Use': approved only as (v); do not use as (n): OPERATION (n); USE (v)"
+        },
+        {
+          "file": "/home/Qtmd/skills/ste-writing-workspace/iteration-1/eval-strict-error-messages/without_skill/outputs/errors.md",
+          "line": 43,
+          "col": 18,
+          "rule": "D02",
+          "severity": "info",
+          "message": "'requirement' is not in the STE100 dictionary: allowed only as an approved technical noun/verb (rules 1.5, 1.12)"
+        },
+        {
+          "file": "/home/Qtmd/skills/ste-writing-workspace/iteration-1/eval-strict-error-messages/without_skill/outputs/errors.md",
+          "line": 43,
+          "col": 73,
+          "rule": "D03",
+          "severity": "info",
+          "message": "'use': approved only as (v); do not use as (n): OPERATION (n); USE (v)"
+        },
+        {
+          "file": "/home/Qtmd/skills/ste-writing-workspace/iteration-1/eval-strict-error-messages/without_skill/outputs/errors.md",
+          "line": 43,
+          "col": 78,
+          "rule": "D01",
+          "severity": "error",
+          "message": "'should' (v) is not approved in STE100: use MUST (v); IF (conj)"
+        },
+        {
+          "file": "/home/Qtmd/skills/ste-writing-workspace/iteration-1/eval-strict-error-messages/without_skill/outputs/errors.md",
+          "line": 44,
+          "col": 8,
+          "rule": "D03",
+          "severity": "info",
+          "message": "'use': approved only as (v); do not use as (n): OPERATION (n); USE (v)"
+        },
+        {
+          "file": "/home/Qtmd/skills/ste-writing-workspace/iteration-1/eval-strict-error-messages/without_skill/outputs/errors.md",
+          "line": 44,
+          "col": 12,
+          "rule": "D02",
+          "severity": "info",
+          "message": "'contractions' is not in the STE100 dictionary: allowed only as an approved technical noun/verb (rules 1.5, 1.12)"
+        },
+        {
+          "file": "/home/Qtmd/skills/ste-writing-workspace/iteration-1/eval-strict-error-messages/without_skill/outputs/errors.md",
+          "line": 44,
+          "col": 47,
+          "rule": "W02",
+          "severity": "error",
+          "message": "contraction \"don't\": write the full form (WORDS rule)"
+        },
+        {
+          "file": "/home/Qtmd/skills/ste-writing-workspace/iteration-1/eval-strict-error-messages/without_skill/outputs/errors.md",
+          "line": 45,
+          "col": 8,
+          "rule": "D03",
+          "severity": "info",
+          "message": "'use': approved only as (v); do not use as (n): OPERATION (n); USE (v)"
+        },
+        {
+          "file": "/home/Qtmd/skills/ste-writing-workspace/iteration-1/eval-strict-error-messages/without_skill/outputs/errors.md",
+          "line": 45,
+          "col": 14,
+          "rule": "D02",
+          "severity": "info",
+          "message": "'ing' is not in the STE100 dictionary: allowed only as an approved technical noun/verb (rules 1.5, 1.12)"
+        },
+        {
+          "file": "/home/Qtmd/skills/ste-writing-workspace/iteration-1/eval-strict-error-messages/without_skill/outputs/errors.md",
+          "line": 45,
+          "col": 19,
+          "rule": "D02",
+          "severity": "info",
+          "message": "'verb' is not in the STE100 dictionary: allowed only as an approved technical noun/verb (rules 1.5, 1.12)"
+        },
+        {
+          "file": "/home/Qtmd/skills/ste-writing-workspace/iteration-1/eval-strict-error-messages/without_skill/outputs/errors.md",
+          "line": 45,
+          "col": 24,
+          "rule": "D01",
+          "severity": "error",
+          "message": "'form' (n/v) is not approved in STE100: use SHAPE (n); BE (v)"
+        },
+        {
+          "file": "/home/Qtmd/skills/ste-writing-workspace/iteration-1/eval-strict-error-messages/without_skill/outputs/errors.md",
+          "line": 46,
+          "col": 22,
+          "rule": "D01",
+          "severity": "error",
+          "message": "'file' (v) is not approved in STE100: use REMOVE (v)"
+        },
+        {
+          "file": "/home/Qtmd/skills/ste-writing-workspace/iteration-1/eval-strict-error-messages/without_skill/outputs/errors.md",
+          "line": 46,
+          "col": 43,
+          "rule": "D02",
+          "severity": "info",
+          "message": "'config' is not in the STE100 dictionary: allowed only as an approved technical noun/verb (rules 1.5, 1.12)"
+        },
+        {
+          "file": "/home/Qtmd/skills/ste-writing-workspace/iteration-1/eval-strict-error-messages/without_skill/outputs/errors.md",
+          "line": 46,
+          "col": 50,
+          "rule": "D01",
+          "severity": "error",
+          "message": "'file' (v) is not approved in STE100: use REMOVE (v)"
+        },
+        {
+          "file": "/home/Qtmd/skills/ste-writing-workspace/iteration-1/eval-strict-error-messages/without_skill/outputs/errors.md",
+          "line": 47,
+          "col": 10,
+          "rule": "D01",
+          "severity": "error",
+          "message": "'file' (v) is not approved in STE100: use REMOVE (v)"
+        },
+        {
+          "file": "/home/Qtmd/skills/ste-writing-workspace/iteration-1/eval-strict-error-messages/without_skill/outputs/errors.md",
+          "line": 47,
+          "col": 15,
+          "rule": "D02",
+          "severity": "info",
+          "message": "'path' is not in the STE100 dictionary: allowed only as an approved technical noun/verb (rules 1.5, 1.12)"
+        },
+        {
+          "file": "/home/Qtmd/skills/ste-writing-workspace/iteration-1/eval-strict-error-messages/without_skill/outputs/errors.md",
+          "line": 47,
+          "col": 45,
+          "rule": "D02",
+          "severity": "info",
+          "message": "'line' is not in the STE100 dictionary: allowed only as an approved technical noun/verb (rules 1.5, 1.12)"
+        },
+        {
+          "file": "/home/Qtmd/skills/ste-writing-workspace/iteration-1/eval-strict-error-messages/without_skill/outputs/errors.md",
+          "line": 47,
+          "col": 60,
+          "rule": "D01",
+          "severity": "error",
+          "message": "'use' (n) is not approved in STE100: use OPERATION (n); USE (v)"
+        },
+        {
+          "file": "/home/Qtmd/skills/ste-writing-workspace/iteration-1/eval-strict-error-messages/without_skill/outputs/errors.md",
+          "line": 47,
+          "col": 74,
+          "rule": "D01",
+          "severity": "error",
+          "message": "'have to' (v) is not approved in STE100"
+        },
+        {
+          "file": "/home/Qtmd/skills/ste-writing-workspace/iteration-1/eval-strict-error-messages/without_skill/outputs/errors.md",
+          "line": 47,
+          "col": 91,
+          "rule": "D01",
+          "severity": "error",
+          "message": "'file' (v) is not approved in STE100: use REMOVE (v)"
+        },
+        {
+          "file": "/home/Qtmd/skills/ste-writing-workspace/iteration-1/eval-strict-error-messages/without_skill/outputs/errors.md",
+          "line": 48,
+          "col": 1,
+          "rule": "D03",
+          "severity": "info",
+          "message": "'Use': approved only as (v); do not use as (n): OPERATION (n); USE (v)"
+        },
+        {
+          "file": "/home/Qtmd/skills/ste-writing-workspace/iteration-1/eval-strict-error-messages/without_skill/outputs/errors.md",
+          "line": 48,
+          "col": 24,
+          "rule": "D01",
+          "severity": "error",
+          "message": "'variable' (adj) is not approved in STE100: use CHANGE (v)"
+        },
+        {
+          "file": "/home/Qtmd/skills/ste-writing-workspace/iteration-1/eval-strict-error-messages/without_skill/outputs/errors.md",
+          "line": 48,
+          "col": 46,
+          "rule": "D03",
+          "severity": "info",
+          "message": "'use': approved only as (v); do not use as (n): OPERATION (n); USE (v)"
+        },
+        {
+          "file": "/home/Qtmd/skills/ste-writing-workspace/iteration-1/eval-strict-error-messages/without_skill/outputs/errors.md",
+          "line": 48,
+          "col": 75,
+          "rule": "D02",
+          "severity": "info",
+          "message": "'purposes' is not in the STE100 dictionary: allowed only as an approved technical noun/verb (rules 1.5, 1.12)"
+        }
+      ],
+      "by_rule": {
+        "D02": 25,
+        "D01": 19,
+        "D03": 12,
+        "W02": 1
+      },
+      "by_severity": {
+        "info": 37,
+        "error": 20
+      }
+    }
+  },
+  "totals": {
+    "D02": 25,
+    "D01": 19,
+    "D03": 12,
+    "W02": 1
+  }
+}

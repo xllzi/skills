@@ -1,0 +1,14 @@
+{
+  "assertion_results": [
+    {"text": "outputs/readme.md exists and preserves the core facts", "passed": true, "evidence": "Facts kept: 'collects logs from your systems and stores them in one place', two-stage pipeline, collector + transformation engine, 'one view of the activity across your stack', install per host, auto-discovery, no configuration, dashboard, 'more than 50 tools', 'enterprise use', 'petabytes'."},
+    {"text": "No marketing adjectives (linter W03 clean)", "passed": true, "evidence": "lint.json: zero findings."},
+    {"text": "No em/en dashes (linter P01 clean)", "passed": true, "evidence": "lint.json: zero findings."},
+    {"text": "No contractions (linter W02 clean)", "passed": true, "evidence": "lint.json: zero findings."},
+    {"text": "No AI-slop phrases (linter W04 clean)", "passed": true, "evidence": "lint.json: zero findings."},
+    {"text": "No sentence over 25 words (linter S01 clean)", "passed": true, "evidence": "lint.json: zero findings."},
+    {"text": "No unjustified passive voice in the text", "passed": true, "evidence": "Zero V01 findings; human read confirms active voice."},
+    {"text": "Numbered steps have one action per item (linter S03 clean)", "passed": true, "evidence": "lint.json: zero S03 findings; single-item list has one action."},
+    {"text": "Adds no claims that are not in the source text", "passed": true, "evidence": "'Queries are fast' de-slops 'blazing fast'; 'one view of the activity across your stack' de-slops 'unparalleled observability across your entire stack'. Nothing invented."}
+  ],
+  "summary": {"passed": 9, "failed": 0, "total": 9, "pass_rate": 1.0}
+}

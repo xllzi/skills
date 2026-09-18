@@ -1,0 +1,36 @@
+{
+  "strict": false,
+  "files": {
+    "readme.md": {
+      "findings": [
+        {
+          "file": "/home/Qtmd/skills/ste-writing-workspace/iteration-1/eval-rewrite-slop-readme/without_skill/outputs/readme.md",
+          "line": 11,
+          "col": 1,
+          "rule": "V01",
+          "severity": "warning",
+          "message": "possible passive voice 'Getting started': use active voice (VERBS rule) (confirm: no 'by' agent found)"
+        },
+        {
+          "file": "/home/Qtmd/skills/ste-writing-workspace/iteration-1/eval-rewrite-slop-readme/without_skill/outputs/readme.md",
+          "line": 14,
+          "col": 1,
+          "rule": "S03",
+          "severity": "warning",
+          "message": "list item has 2 sentences: one action per item (STRUCTURE rule)"
+        }
+      ],
+      "by_rule": {
+        "V01": 1,
+        "S03": 1
+      },
+      "by_severity": {
+        "warning": 2
+      }
+    }
+  },
+  "totals": {
+    "V01": 1,
+    "S03": 1
+  }
+}

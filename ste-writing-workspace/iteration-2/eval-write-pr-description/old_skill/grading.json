@@ -1,0 +1,12 @@
+{
+  "assertion_results": [
+    {"text": "outputs/pr_description.md exists and covers what/why/testing", "passed": true, "evidence": "Sections 'What changed', 'Why', 'How we tested it'; six unit-test cases plus a soak test."},
+    {"text": "No em/en dashes (linter P01 clean)", "passed": true, "evidence": "lint.json: zero findings."},
+    {"text": "No sentence over 25 words (linter S01 clean)", "passed": true, "evidence": "lint.json: zero findings."},
+    {"text": "No marketing adjectives or AI-slop phrases (linter W03/W04 clean)", "passed": true, "evidence": "lint.json: zero findings."},
+    {"text": "Concise: body is 500 words or fewer", "passed": true, "evidence": "wc -w: 343 words."},
+    {"text": "No unjustified passive voice in the text", "passed": true, "evidence": "Zero V01 findings; human read confirms active voice."},
+    {"text": "No invented specifics: every number, name, or path comes from the prompt; unknown values use placeholders", "passed": false, "evidence": "Fabricated specifics: 'up to 4 attempts', delays '100 ms, 200 ms, 400 ms, then 800 ms', 'random jitter of up to 20 percent', soak test 'for 6 hours', error rates '4.8 percent' -> '0.02 percent', 'p99 latency grew by 340 ms'. None of these are in the prompt. Same failure mode as iteration-1 without_skill."}
+  ],
+  "summary": {"passed": 6, "failed": 1, "total": 7, "pass_rate": 0.857}
+}
