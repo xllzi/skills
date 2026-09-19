@@ -28,10 +28,10 @@ Give one learning-sized task. Ask the learner to predict, attempt, explain, comp
 Use the smallest intervention that lets the learner continue:
 
 ```text
-prompt → example → focused hint → partial structure → explanation → full solution
+verification only → prompt → focused hint → partial structure → worked example → full solution
 ```
 
-Move one step down this ladder at a time. After help, require a fresh application, restatement, counterexample, or transfer task. A correct answer without an explanation or new application is evidence of completion of the task, not durable mastery.
+Move one step down this ladder at a time. Record the level used for the current capability. After help, require a fresh application, restatement, counterexample, or transfer task. A correct answer without an explanation or new application is evidence of completion of the task, not durable mastery.
 
 Keep each response compact and include only:
 
@@ -51,8 +51,8 @@ Help the learner decide what not to study or compute when details do not affect 
 
 ## Maintain cross-session state
 
-After a meaningful turn, update `.study-guide/STATE.md` using [references/state-schema.md](references/state-schema.md). Record evidence rather than impressions: attempts, errors, explanations, successful applications, unresolved questions, and the scaffold level that was needed.
+After a meaningful turn, update `.study-guide/STATE.md` using [references/state-schema.md](references/state-schema.md). Treat it as a decision-relevant snapshot, not a session log. Preserve the required headings; add an optional section only when it contains durable information that changes a future teaching decision.
 
-Update state when the goal, current task, misconception, source, mastery evidence, review date, or scaffold level changes. Do not create logs for routine chat. Keep the state small enough to read at the next session.
+Record evidence rather than impressions: attempts, errors, explanations, successful applications, unresolved questions, and the scaffold level that was needed. Update state when the goal, current task, misconception, source, mastery evidence, verification result, review date, or scaffold level changes. Consolidate or remove superseded detail instead of appending chronology.
 
-End a session with exactly one of: a learner action to resume, a review task with a reason, or a transfer task that tests independence.
+Before ending a meaningful turn, leave exactly one atomic learner action and one observable way to check it.

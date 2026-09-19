@@ -2,3 +2,6 @@ interface:
   display_name: "Study Guide"
   short_description: "Guide sustained learning with scaffolding and feedback"
   default_prompt: "Use $study-guide to continue my learning with minimal targeted guidance."
+
+policy:
+  allow_implicit_invocation: false
