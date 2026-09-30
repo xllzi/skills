@@ -1,8 +1,8 @@
 # Cross-session state
 
-Store durable learning state in `.study-guide/STATE.md` in the current project. Create the directory only when a sustained learning goal exists.
+Store durable learning state in `.study-guide/STATE.md` in the study project identified from the goal and materials. Create the directory only when a sustained learning goal exists.
 
-Treat the file as a decision-relevant snapshot, not a session log. Preserve the required headings below. Add an optional section only when it contains durable information that changes a future teaching decision.
+Treat the file as a teaching-decision snapshot, not a session log. Material sequence, scope, completion, and position belong in [PROGRESS.md](progress-schema.md); link to its relevant entry rather than duplicating them here. Preserve the required headings below. Add an optional section only when it contains durable information that changes a future teaching decision.
 
 Use this compact structure:
 
@@ -14,22 +14,24 @@ Use this compact structure:
 - Why it matters:
 
 ## Current loop
+- Material entry: link to the current unit in PROGRESS.md
 - Problem:
 - Next learner action: one observable action
 - Mode: exploration | practice | verification | review | transfer
 - Verification target:
 - Latest result: not run | pass | fail — observation
+- Advancement decision: continue | address blocking gap — evidence
 
 ## Evidence
 - Can do independently:
 - Can do with a hint:
-- Not yet demonstrated:
+- Not yet demonstrated: relevant uncertainty, not an assumed gap
 
 ## Misconceptions and gaps
 - [ ] misconception or missing prerequisite — evidence — next check
 
 ## Scaffolding
-- Current source:
+- Current support reference: only a supplementary explanation or example needed for this action
 - Current support for the next action: use the support ladder in SKILL.md
 - Removal condition:
 
@@ -58,5 +60,6 @@ Add `## Durable synthesis` only for a cross-cutting insight that will change fut
 - Move older actions into evidence, review, or open questions.
 - Record a misconception only when an attempt or explanation supports it; phrase it as a hypothesis if evidence is weak. When resolved, move the result into evidence and remove the stale gap.
 - A capability moves to “Can do independently” after successful application to a new but related problem, not after recognition or agreement with an explanation.
+- Readiness to advance is judged against the next material step. Keep supported task completion even when independent application or durable mastery remains unverified; schedule further evidence only where it changes a teaching decision.
 - Record support for the current capability using the exact ladder in `SKILL.md`. Raise it only when the learner is blocked; lower it after successful independent progress.
 - Retain only details that can change the next teaching decision. Add a separate source or notes file only when the learner needs material that will be reused.
