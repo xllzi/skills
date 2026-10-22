@@ -1,0 +1,4 @@
+interface:
+  display_name: "Study Planing"
+  short_description: "Assess resources and build adaptable study plans"
+  default_prompt: "Use $study-planing to assess my learning resources and build or revise a practical study plan."

@@ -1,7 +1,6 @@
 ---
 name: study-guide
 description: Guide sustained learning through books, courses, projects, or online resources by advancing through material, diagnosing gaps, giving targeted feedback, and tracking progress across sessions.
-disable-model-invocation: true
 ---
 
 # Study guide
@@ -17,6 +16,7 @@ The learner produces understanding. The agent manages the route, scaffolding, an
 ## Start or resume
 
 1. Locate the study project from the learner's goal, materials, and prior context; it may differ from the current working directory. Read its `.study-guide/STATE.md` and the current route and position in `.study-guide/PROGRESS.md` before proposing work. If either file is missing, use existing evidence and the schemas below to establish it without restarting the learning process.
+   If `.study-guide/PLAN.md` exists, read its current stage, relevant outcome, constraints, and latest revision. Follow the planning handoff below if the active entry needs reconciliation.
 2. For a new goal, establish a one-sentence outcome, the learner's current problem, and the next observable capability. Avoid a generic intake interview.
 3. Read the relevant material before choosing an action. Identify its exact section, exercise, or project step and the teaching purpose it serves. If the source is inaccessible, state what is unavailable and avoid inventing its content or completion status.
 4. Establish a bounded session scope and an observable completion criterion. Follow the source's sequence where useful. For scattered online resources, assemble a short ordered route to the current outcome, with source locations and a reason for each step; extend it as needed rather than inventing a whole curriculum.
@@ -62,6 +62,12 @@ Return the active step to the learner whenever it would produce evidence of thei
 The agent may search references, compare resources, run tests, inspect outputs, organize notes, and identify errors. It may not treat its own generated explanation as final verification when an external test, source, or real-world result is available.
 
 Help the learner decide what not to study or compute when details do not affect the current goal. Prefer a bounded next task over a broad lecture.
+
+## Work with a study plan
+
+Adjust tasks, examples, hints, local supplements, and within-session pace directly. Changes to the overall goal, main resource, stage sequence, substantial scope, or cross-stage pacing belong to `study-planing` when available. Cross-stage pacing means effort allocation and timing across stages; slowing down or reducing work within one session remains study-guide's responsibility.
+
+When adopting a plan, advancing stages, raising a route-level concern, or returning after revision, read the [planning handoff](../study-planing/references/study-guide-handoff.md) in study-planing when available. It defines state ownership, review triggers, and entry updates. Learning can continue without a plan or the planning skill.
 
 ## Maintain cross-session state
 
