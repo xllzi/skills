@@ -14,7 +14,13 @@ Most commands default to the active file if omitted. Quote values with spaces
 
 IMPORTANT: The target vault you are managing is always "SquareLab". So, you should always add parameter `vault=SquareLab` to obsidian command.
 
-When Agent in sandbox runs this skill from the `/home/Qtmd/SquareLab` project, the sandbox configuration must have access to this path in the host so the CLI can reach the running host Obsidian instance. 
+If the CLI cannot reach the running Obsidian instance from Codex's sandbox
+(for example, Obsidian config is read-only or Electron cannot reach the host),
+request a one-time sandbox escalation for the specific `obsidian` command.
+Keep Obsidian open and include `vault=SquareLab`. Review the exact command before
+escalation; vault writes still require the user's approval under the rules below.
+If escalation is unavailable or denied, report the blocker instead of changing
+Codex's sandbox settings for the whole session or project.
 
 ## Role & collaboration
 

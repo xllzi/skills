@@ -1,6 +1,6 @@
 ---
 name: ste-writing
-description: skill of writing technical documents (docs, manuals, README, PR descriptions, error messages, release notes, comments of code) in ASD-STE100 Simplified Technical English to remove "AI slop". Use whenever you write technical documents or be asked to make writing not sound like AI, make docs clear, concise, or plain, enforce a controlled writing style. Two modes, strict and STE-flavored.
+description: skill of writing technical documents (docs, manuals, README, PR descriptions, error messages, release notes, comments of code) in ASD-STE100 Simplified Technical English to remove "AI slop". Use whenever you write technical documents in English or be asked to make writing not sound like AI, make docs clear, concise, or plain, enforce a controlled writing style. Two modes, strict and STE-flavored.
 ---
 
 ## Overview
